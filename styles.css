@@ -128,12 +128,24 @@ footer{
 }
 
 .container1,
-.container2,
 .container3,
 .container-work {
   padding-top: 7em;
   padding-bottom: 7em;
+}
+
+.container2{
+  padding-top: 0em;
+  padding-bottom: 7em;
+}
+
+.container-work{
   border-top: .3px dotted #faef5f;
+}
+
+.container1 {
+  border-top: .3px dotted #faef5f;
+  border-bottom: .3px dotted #faef5f;
 }
 
 /* Head styling
@@ -355,6 +367,10 @@ nav a{
 }
 
 .yoobee img{
+  filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
+}
+
+.skill{
   filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
 }
 
@@ -695,9 +711,6 @@ img.thumb{
   height: 17px;
   vertical-align: middle;
 }
-
-
-
 
 
 /* contact page styling
