@@ -393,10 +393,11 @@ nav a{
   filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
 }
 
-.block2{
-  color: #bb395d;
-  filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
-}
+  .block2{
+    color: #bb395d;
+    filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
+  }
+
 
 .block3{
   color: #f28a57;
@@ -503,6 +504,7 @@ img.thumb{
 
 .video img,
 .video2 img {
+  display: block;
   margin: 0 auto;
 }
 
