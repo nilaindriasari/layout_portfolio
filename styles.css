@@ -489,7 +489,6 @@ img.thumb{
   /*padding-top: 30px;*/
   padding-top: .95em;
   height: 0;
-  overflow: hidden;
   transform: scale(.76) translateY(28px); /*new*/
 }
 @media screen and (min-width: 48em){
@@ -498,6 +497,7 @@ img.thumb{
     transform: scale(.85);
   }
   .video {
+    overflow: hidden;
     transform: scale(.76) translateY(0px); /*new*/
   }
 }
