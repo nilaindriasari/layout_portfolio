@@ -268,7 +268,7 @@ footer{
 
 /* Nav
 ------------------------------------------*/
-ul {
+.sticky-nav ul {
   list-style: none;
   display: block;
   /*margin: 60px auto;*/
@@ -277,12 +277,12 @@ ul {
   filter: drop-shadow(-8px 10px 1px rgba(70, 70, 70, 0.1));
 }
 @media screen and (min-width:48em){
-  ul{
+  .sticky-nav ul{
     width: 400px;
   }
 }
 
-li {
+.sticky-nav li {
   position: relative;
   display: block;
   width: 50px;
@@ -296,7 +296,7 @@ li {
   perspective: 1000px;
 }
 
-li span {
+.sticky-nav li span {
 	position: relative;
   display: block;
 	width: 50px;
@@ -308,7 +308,7 @@ li span {
   border-right: .05px solid #FFF687;
 }
 
-li span::before {
+.sticky-nav li span::before {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -322,20 +322,20 @@ li span::before {
   align-content: center;
 }
 
-li:hover span,
-li:focus span {
+.sticky-nav li:hover span,
+.sticky-nav li:focus span {
 	transform: rotateX(90deg) translateY(-22px);
 }
 
-li:hover span::before,
-li:focus span::before {
+.sticky-nav li:hover span::before,
+.sticky-nav li:focus span::before {
 	background: linear-gradient(30deg, #bb395d, #f28a57);
   border-top: .05px solid #FFD39F;
   border-right: .05px solid #FFD39F;
   color: #FFF7E3;
 }
 
-nav a{
+.sticky-nav nav a{
   transition: all 7s ease-in-out;
 }
 
@@ -393,7 +393,8 @@ nav a{
   filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
 }
 
-  .block2{
+.block2,
+.block-info{
     color: #bb395d;
     filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
   }
@@ -402,6 +403,15 @@ nav a{
 .block3{
   color: #f28a57;
   filter: drop-shadow(-1px 4px 1px rgba(70, 70, 70, 0.1));
+}
+
+.block-info{
+  display: none;
+}
+@media screen and (min-width: 48em){
+  .block-info{
+    display: inline;
+  }
 }
 
 #portfolio img.thumb:hover,
@@ -416,6 +426,45 @@ img.thumb{
   margin-left: 1em;
 }
 
+ul.software {
+list-style: none;
+display: block;
+margin: 0 auto;
+}
+.software li{
+  padding-top: .7em;
+  line-height: 0em;
+  font-size: 14px;
+  /*width: 100%;*/
+  height: auto;
+  text-align: left;
+  margin-left: 1em;
+}
+@media screen and (min-width: 48em){
+ul.software {
+display: inline-block;
+margin: 0 auto;
+}
+.software li{
+  padding-top: 0em;
+  line-height: 0em;
+  font-size: 16px;
+  /*width: 100%;*/
+  height: auto;
+  text-align: center;
+  margin-left: 1em;
+  display: inline-block;
+}
+}
+
+.body-text{
+  text-align: justify;
+}
+@media screen and (min-width: 48em){
+  .body-text{
+    text-align: center;
+  }
+}
 
 /* LAptop & HP gallery for Work Page
 ------------------------------------------*/
@@ -610,6 +659,8 @@ img.thumb{
 }
 
 .other-link ul{
+  padding-left: 0em;
+  padding-right: 1em;
   max-width:100%;
   list-style: none;
   /*display: block;
