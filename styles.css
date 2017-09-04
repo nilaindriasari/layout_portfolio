@@ -5,18 +5,19 @@ body {
   font-weight: 200;
   text-align: center;
   margin: 0;
-  color: #551f1f;
+  color: #621817;
   padding-top: 5em;
   line-height: 1.7;
 }
 @media screen and (min-width: 48em){
   body{
     font-size: 16px;
+    color: #621817;
   }
 }
 
 a {
-  color: #551f1f;
+  color: #621817;
   text-decoration: none;
 }
 
