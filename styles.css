@@ -437,6 +437,7 @@ img.thumb{
   width: 100%;
   align-items: center;
   min-height:45em;
+  /*min-height: 30em;*/
   position:relative;
 }
 
@@ -446,11 +447,15 @@ img.thumb{
   right: 0em;
   min-width: 245px;
   top: 33em;
+  /*top: 15em; /*new*/*/
 }
 @media screen and (min-width: 48em){
   .gallery-container{
     min-height: 0em;
   }
+  /*.device {
+    top: 33em;
+  }*/
 }
 
 .work-gallery1{
@@ -480,7 +485,8 @@ img.thumb{
   max-width: 100%;
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
+  padding-top: .95em;
   height: 0;
   overflow: hidden;
   transform: scale(.76) translateY(28px); /*new*/
